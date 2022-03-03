@@ -1,0 +1,15 @@
+<hello name="{{ name }}"></hello>
+<!-- {{ day | date }}-->
+<p>Start editing to see some magic happen :)</p>
+<input [(ngModel)]="value" #userInput /> {{ value }}
+<button (click)="adduser(userInput.value)">ADD</button>
+
+{{ 'Gopinath' | append: 'Surendran' }}
+
+<div *ngFor="let user of users">
+  {{ user.name }}
+</div>
+
+<div>Async Data : {{ jsonData | async | json }}</div>
+
+<div>Date : {{ date$ | async }}</div>
